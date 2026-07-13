@@ -134,7 +134,32 @@ def plot_histogram(
     plt.show()
 
 
+def plot_line(
+    data,
+    x,
+    y,
+    title,
+    xlabel,
+    ylabel,
+    color=PRIMARY_COLOR
+):
+    plt.figure()
 
+    sns.lineplot(
+        data=data,
+        x=x,
+        y=y,
+        marker="o",
+        linewidth=2,
+        color=color
+    )
+
+    plt.title(title)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+
+    plt.tight_layout()
+    plt.show()
 
 
 
