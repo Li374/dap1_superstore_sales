@@ -141,9 +141,10 @@ def plot_line(
     title,
     xlabel,
     ylabel,
-    color=PRIMARY_COLOR
+    color=PRIMARY_COLOR,
+    figsize = DEFAULT_FIGSIZE,
 ):
-    plt.figure()
+    plt.figure(figsize=figsize)
 
     sns.lineplot(
         data=data,
