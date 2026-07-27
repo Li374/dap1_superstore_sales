@@ -163,4 +163,27 @@ def plot_line(
     plt.show()
 
 
+def plot_scatter(
+    data,
+    x,
+    y,
+    title=None
+):
+    plt.figure()
 
+    sns.scatterplot(
+        data=data,
+        x=x,
+        y=y,
+        color=PRIMARY_COLOR,
+        alpha=0.6
+    )
+
+    plt.title(title)
+    plt.xlabel(x)
+    plt.ylabel(y)
+
+    sns.despine()
+
+    plt.tight_layout()
+    plt.show()
